@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport">
+	<link rel="stylesheet" type="text/css" href="test.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script>
+		var count = 0;
+function myfunction(x) {
+	var x;
+	
+    	if(x == 1){
+    		count = count+1;
+    		console.log(count)
+    	}
+
+    	if(count == 1){
+    		document.getElementById("change").style.background = 'red';
+    	}
+    	else if(count == 2){
+    		document.getElementById("change").style.background = 'green';
+    		count = 0;
+    	}
+  
+}
+
+</script>
+	<!--<script type="text/javascript" src="test.js"></script>-->
+	<title>Document</title>
+</head>
+<body>
+
+<button id="change" onclick="myfunction(1)" class="btn btn-success">click</button>
+
+</body>
+</html>
